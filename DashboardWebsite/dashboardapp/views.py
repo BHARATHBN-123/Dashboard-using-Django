@@ -1,14 +1,10 @@
 from django.shortcuts import render
 import requests
 
-# Create your views here.
-def get_products():
+
+def display_products(request,*args,**kwargs):
     url = 'https://fakestoreapi.com/products'
-    r = requests.get(url , auth=True)
+    r = requests.get(url)
     products = r.json() 
-    print (products)
-    product_list = []
-    for i in products:
-        product_list.append(i)
-    return product_list
-get_products()
+
+    return render (request , 'dashboardapp/base.html',{'products': products})
