@@ -8,7 +8,7 @@ products = r.json()
 product_list = []
 for i in products:
     product_list.append(i)
-print(len(product_list))
+print(product_list[1])
 
 
     

@@ -1,0 +1,29 @@
+{% extends 'dashboardapp/base.html' %}
+{% block title %} dashboardapp {% endblock title %}
+{% block content %}
+
+<table>
+    <tbody>
+        <tr>
+            <th> id</th>
+            <th> title</th>
+            <th> price</th>
+            <th> category</th>
+        </tr>
+    
+    {% for i in products %}
+            
+            <tr>
+                <td>{{i.id}}</td>
+                <td>{{i.title}}</td>
+                <td>{{i.price}}</td>
+                <td>{{i.category}}</td>
+                <!-- <td>{{i.image}}</td> -->
+            </tr>
+        </tbody>
+        
+    {% endfor %}
+</table>
+
+
+    {% endblock content %}
