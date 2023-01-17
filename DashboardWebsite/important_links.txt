@@ -1,0 +1,4 @@
+ECHO is on.
+documentation : https://django-adminlte3.readthedocs.io/en/latest/templates_and_blocks.html
+
+githhub : https://github.com/d-demirci/django-adminlte3
